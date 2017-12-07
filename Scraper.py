@@ -24,7 +24,7 @@ answers = []
 locations = []
 for i in range(60):
     try:
-        #sleep(2)
+        sleep(3)
         soup = BeautifulSoup(driver.page_source, 'lxml')
         tags = soup.find_all(class_='search-result-entity-name')
         places = soup.find_all(class_='card__inner')
